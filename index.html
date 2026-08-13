@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A. Mahalakshmi | Electronics & Communication Engineer Portfolio</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Personal Portfolio of A. Mahalakshmi, Electronics and Communication Engineering Student. Specialized in ECE, AI, Embedded Systems, Python, and Web Development.">
+  <meta name="keywords" content="A. Mahalakshmi, Mahalakshmi ECE, Sri Eshwar College of Engineering, Portfolio, Embedded Systems, Python, Django, Android Developer, Electronics and Communication Engineering">
+  <meta name="author" content="A. Mahalakshmi">
+
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Connected Nodes Background Canvas (ECE/Node Net) -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Floating Social Media Icons (Left Side) -->
+  <div class="floating-socials">
+    <a href="https://github.com/mahalakshmia2025ece-eng" target="_blank" class="floating-social-icon" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/mahalakshmi-a-004a27380" target="_blank" class="floating-social-icon" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <i class="fas fa-microchip"></i> Mahalakshmi<span>.</span>
+      </a>
+      
+      <nav id="nav-menu" class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content reveal">
+        <span class="hero-subtitle">Welcome to my Digital Space</span>
+        <h1 class="hero-title">Hi, I'm <span>A. Mahalakshmi</span></h1>
+        
+        <!-- Typing Animation Wrapper -->
+        <div class="hero-typing">
+          <span>I am an </span>
+          <span id="typing-text" style="color: var(--accent-primary); font-weight: 700;"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        
+        <p class="hero-desc">
+          Passionate about Electronics, Artificial Intelligence, Web Development, Embedded Systems, and solving real-world problems through innovative technology.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="C:\Users\maha\OneDrive\Documents\resume for upload.pdf" download class="btn btn-primary">
+            <i class="fas fa-file-download"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <i class="fas fa-project-diagram"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+      </div>
+      
+      <!-- Circular Frame Glowing Profile Image -->
+      <div class="hero-image-wrapper reveal">
+        <div class="profile-circle-container">
+          <img src="assets/profile.jpg" alt="A. Mahalakshmi Profile Photo" class="profile-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="reveal">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <p>My journey, engineering philosophy, and values</p>
+    </div>
+    
+    <div class="about-grid">
+      <div class="about-details">
+        <h3 class="about-title">ECE Student & Technology Enthusiast</h3>
+        <p class="about-bio">
+          I am an Electronics and Communication Engineering student with a deep fascination for the intersection of hardware and software. My academic journey has allowed me to delve into Embedded Systems, Circuit Design, and Digital Electronics, while my love for programming has driven me to master Java, Python, and Android Development.
+        </p>
+        <p class="about-bio">
+          I enjoy building modern web applications, particularly utilizing Python frameworks like Django, and integrating AI methodologies into my solutions. I am committed to continuous learning, building systems that make a tangible impact, and adapting to the fast-evolving tech landscape.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Continuous Learner</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Analytical Thinker</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Hardware/Software Integration</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-check-circle"></i>
+            <span>Adaptive Developer</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Statistics Counters (Animated) -->
+      <div class="stats-container">
+        <div class="glass-card stat-card">
+          <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="stat-number" data-target="9.15">0</div>
+          <div class="stat-label">B.E. CGPA</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="stat-number" data-target="2">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-icon"><i class="fas fa-award"></i></div>
+          <div class="stat-number" data-target="9">0</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+          <div class="stat-number" data-target="1500">0</div>
+          <div class="stat-label">Coding Solved</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Timeline -->
+  <section id="education" class="reveal">
+    <div class="section-header">
+      <h2>Education Timeline</h2>
+      <p>My academic foundation and educational achievements</p>
+    </div>
+    
+    <div class="education-timeline-container">
+      <!-- B.E. ECE -->
+      <div class="timeline-item">
+        <div class="timeline-dot">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="glass-card timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-degree">B.E. Electronics and Communication Engineering</h3>
+            <span class="timeline-year">2025 - 2029</span>
+          </div>
+          <p class="timeline-school">Sri Eshwar College of Engineering</p>
+          <div class="timeline-grade">
+            <i class="fas fa-star" style="color: #f1c40f;"></i>
+            <span>CGPA: 9.15 / 10.0</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- HSC -->
+      <div class="timeline-item">
+        <div class="timeline-dot">
+          <i class="fas fa-school"></i>
+        </div>
+        <div class="glass-card timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-degree">Higher Secondary Certificate (HSC)</h3>
+            <span class="timeline-year">2024 - 2025</span>
+          </div>
+          <p class="timeline-school">Government Girls Higher Secondary School</p>
+          <div class="timeline-grade">
+            <i class="fas fa-star" style="color: #f1c40f;"></i>
+            <span>Percentage: 92.67%</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- SSLC -->
+      <div class="timeline-item">
+        <div class="timeline-dot">
+          <i class="fas fa-book-reader"></i>
+        </div>
+        <div class="glass-card timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-degree">Secondary School Leaving Certificate (SSLC)</h3>
+            <span class="timeline-year">2022 - 2023</span>
+          </div>
+          <p class="timeline-school">Government Girls Higher Secondary School</p>
+          <div class="timeline-grade">
+            <i class="fas fa-star" style="color: #f1c40f;"></i>
+            <span>Percentage: 86.8%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="reveal">
+    <div class="section-header">
+      <h2>Technical Skills</h2>
+      <p>My programming, software, and hardware capabilities</p>
+    </div>
+    
+    <div class="skills-container">
+      <!-- Programming -->
+      <div class="glass-card skills-card">
+        <h3 class="skills-category-title">
+          <i class="fas fa-code"></i> Programming
+        </h3>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Java</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-fill" data-percent="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-fill" data-percent="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">C</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-fill" data-percent="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Web Development -->
+      <div class="glass-card skills-card">
+        <h3 class="skills-category-title">
+          <i class="fas fa-globe"></i> Web
+        </h3>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML / CSS</span>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-fill" data-percent="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-fill" data-percent="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Django (Python)</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-fill" data-percent="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="glass-card skills-card">
+        <h3 class="skills-category-title">
+          <i class="fas fa-tools"></i> Tools
+        </h3>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">VS Code / GitHub</span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-fill" data-percent="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">NI Multisim</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-fill" data-percent="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="reveal">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <p>Some of the software systems and websites I have designed and engineered</p>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="glass-card project-card">
+        <div class="project-img-wrapper">
+          <img src="assets/project1.png" alt="AI-Based Learning Website Screenshot" class="project-img">
+          <div class="project-overlay">
+            <a href="https://github.com/mahalakshmia2025ece-eng" target="_blank" class="project-overlay-btn" title="Github Code">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Django</span>
+            <span class="project-tag">AI</span>
+          </div>
+          <h3 class="project-title">AI-Based Learning Website</h3>
+          <p class="project-desc">
+            Developed an intelligent learning platform that allows students to enroll in courses, receive AI-based recommendations, predict scores, and access personalized learning resources dynamically.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/mahalakshmia2025ece-eng" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Github <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="glass-card project-card">
+        <div class="project-img-wrapper">
+          <img src="assets/project2.png" alt="Online Car Selling Website Screenshot" class="project-img">
+          <div class="project-overlay">
+            <a href="https://github.com/mahalakshmia2025ece-eng" target="_blank" class="project-overlay-btn" title="Github Code">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Django</span>
+          </div>
+          <h3 class="project-title">Online Car Selling Website</h3>
+          <p class="project-desc">
+            Developed an online car retail and browsing platform where users can inspect premium car models, compare features, add vehicles to cart, execute bookings, complete mock payments, and receive automatic booking confirmations.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/mahalakshmia2025ece-eng" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Github <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="reveal">
+    <div class="section-header">
+      <h2>Certifications</h2>
+      <p>Professional certifications, validations, achievements, and courses</p>
+    </div>
+    
+    <div class="certs-grid">
+      <!-- Cert 1 -->
+      <div class="glass-card cert-card">
+        <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Python Certification</h3>
+          <p class="cert-provider">HackerRank</p>
+          <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+      
+      <!-- Cert 2 -->
+      <div class="glass-card cert-card">
+        <div class="cert-icon"><i class="fas fa-database"></i></div>
+        <div class="cert-info">
+          <h3 class="cert-title">SQL Certification</h3>
+          <p class="cert-provider">HackerRank</p>
+          <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+      
+      <!-- Cert 3 -->
+      <div class="glass-card cert-card">
+        <div class="cert-icon"><i class="fab fa-python"></i></div>
+        <div class="cert-info">
+          <h3 class="cert-title">The Joy of Computing Using Python</h3>
+          <p class="cert-provider">NPTEL</p>
+          <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+      
+      <!-- Cert 4 -->
+      <div class="glass-card cert-card">
+        <div class="cert-icon"><i class="fas fa-stream"></i></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Data Structures & Algorithms</h3>
+          <p class="cert-provider">Udemy</p>
+          <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+      
+      <!-- Cert 5 -->
+      <div class="glass-card cert-card">
+        <div class="cert-icon"><i class="fas fa-users-cog"></i></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Employee Management System (Springboard)</h3>
+          <p class="cert-provider">Infosys</p>
+          <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+
+      <!-- Cert 6 -->
+      <div class="glass-card cert-card">
+        <div class="cert-icon"><i class="fab fa-redhat"></i></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Red Hat Java Course Completion Certificate</h3>
+          <p class="cert-provider">Red Hat</p>
+          <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+      <!--cert7-->
+      <div class="glass-card cert-card">
+        <div class="cert-icon"><i class="fab fa-redhat"></i></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Data Structures using C </h3>
+          <p class="cert-provider">Skill Rack</p>
+          <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+      <div class="glass-card cert-card">
+        <div class="cert-icon"><i class="fab fa-redhat"></i></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Introduction to Artificial Intelligence</h3>
+          <p class="cert-provider">Simplilearn</p>
+          <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+      <div class="glass-card cert-card">
+        <div class="cert-icon"><i class="fab fa-redhat"></i></div>
+        <div class="cert-info">
+          <h3 class="cert-title">Certificate For Completion of C Training</h3>
+          <p class="cert-provider">IIT Bombay</p>
+          <span class="cert-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="reveal">
+    <div class="section-header">
+      <h2>Achievements</h2>
+      <p>Key academic recognitions, contests, and coding profiles</p>
+    </div>
+    
+    <div class="achievements-grid">
+      <!-- Coding Carnival -->
+      <div class="glass-card award-card">
+        <div class="award-icon-box"><i class="fas fa-trophy"></i></div>
+        <h3 class="award-title">Coding Carnival</h3>
+        <p class="award-desc">Secured Certificate of Distinction in college Coding Carnival event.</p>
+      </div>
+
+      <!-- HackerRank Gold -> Python -->
+      <div class="glass-card award-card">
+        <div class="award-icon-box"><i class="fas fa-award"></i></div>
+        <h3 class="award-title">HackerRank Gold Badge</h3>
+        <p class="award-desc">Earned Gold Badge in Python programming language challenge.</p>
+      </div>
+      <!--codechef and skillrack-->
+      <div class="glass-card award-card">
+        <div class="award-icon-box"><i class="fas fa-award"></i></div>
+        <h3 class="award-title">CodeChef and SkillRack Bronze Badge</h3>
+        <p class="award-desc">Earned Bronze Badge in C programming language challenge.</p>
+      </div>
+      <!-- PyHack Runner Up -->
+      <div class="glass-card award-card">
+        <div class="award-icon-box"><i class="fas fa-laptop-house"></i></div>
+        <h3 class="award-title">PyHack Runner Up</h3>
+        <p class="award-desc">Runner-up in state-level PyHack Python programming hackathon.</p>
+      </div>
+    </div>
+
+    <!-- Active Coding Profiles Section -->
+    <div class="coding-profiles-container glass-card">
+      <h3 style="width: 100%; text-align: center; margin-bottom: 1.5rem; font-size: 1.4rem;">Social & Coding Profiles</h3>
+      <a href="https://github.com/mahalakshmia2025ece-eng" target="_blank" class="profile-pill pill-github" style="background: rgba(148, 163, 184, 0.15); color: var(--text-primary); border: 1px solid rgba(148, 163, 184, 0.2);">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/mahalakshmi-a-004a27380" target="_blank" class="profile-pill pill-linkedin" style="background: rgba(0, 119, 181, 0.1); color: #0077b5; border: 1px solid rgba(0, 119, 181, 0.2);">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+      <a href="https://leetcode.com/u/a_maha/" target="_blank" class="profile-pill pill-leetcode">
+        <i class="fas fa-code"></i> LeetCode
+      </a>
+      <a href="https://www.hackerrank.com/profile/m31455700" target="_blank" class="profile-pill pill-hackerrank">
+        <i class="fab fa-hackerrank"></i> HackerRank
+      </a>
+      <a href="https://codeforces.com/profile/mahalakshmi.a2025ece" target="_blank" class="profile-pill pill-codeforces">
+        <i class="fas fa-chart-line"></i> Codeforces
+      </a>
+    </div>
+  </section>
+
+  <!-- GitHub and LinkedIn Showcase (with QR Codes) -->
+  <section id="social-showcase" class="reveal">
+    <div class="section-header">
+      <h2>Connect Offline or Online</h2>
+      <p>Scan the QR codes or click links to visit my professional network handles</p>
+    </div>
+    
+    <div class="socials-showcase-grid">
+      <!-- GitHub Showcase -->
+      <div class="glass-card showcase-card github-card">
+        <div class="showcase-icon-box">
+          <i class="fab fa-github"></i>
+        </div>
+        <div class="showcase-info">
+          <h3>GitHub Profile</h3>
+          <p>@mahalakshmia2025ece-eng</p>
+        </div>
+        
+        <!-- Live Generated QR code from free API -->
+        <div class="qr-code-wrapper">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/mahalakshmia2025ece-eng" alt="GitHub QR Code" class="qr-code-img">
+        </div>
+        
+        <a href="https://github.com/mahalakshmia2025ece-eng" target="_blank" class="btn btn-secondary showcase-btn">
+          Visit GitHub <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <!-- LinkedIn Showcase -->
+      <div class="glass-card showcase-card linkedin-card">
+        <div class="showcase-icon-box">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="showcase-info">
+          <h3>LinkedIn Profile</h3>
+          <p>A. Mahalakshmi</p>
+        </div>
+        
+        <!-- Live Generated QR code from free API -->
+        <div class="qr-code-wrapper">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.linkedin.com/in/mahalakshmi-a-004a27380" alt="LinkedIn QR Code" class="qr-code-img">
+        </div>
+        
+        <a href="https://www.linkedin.com/in/mahalakshmi-a-004a27380" target="_blank" class="btn btn-primary showcase-btn">
+          Connect on LinkedIn <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="reveal">
+    <div class="section-header">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for projects, collaborations, or job opportunities</p>
+    </div>
+    
+    <div class="contact-grid">
+      <!-- Contact Info Cards -->
+      <div class="contact-info-list">
+        <div class="glass-card contact-info-item">
+          <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">Phone</span>
+            <span class="contact-info-value">+91 6374043156</span>
+          </div>
+        </div>
+        <div class="glass-card contact-info-item">
+          <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">Email</span>
+            <span class="contact-info-value">mahalakshmi.ece2025@gmail.com</span>
+          </div>
+        </div>
+        <div class="glass-card contact-info-item">
+          <div class="contact-info-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">LinkedIn</span>
+            <span class="contact-info-value">mahalakshmi-a-004a27380</span>
+          </div>
+        </div>
+        <div class="glass-card contact-info-item">
+          <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">GitHub</span>
+            <span class="contact-info-value">mahalakshmia2025ece-eng</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Cards for Online Profiles -->
+      <div class="contact-info-list animate-cards">
+        <div class="glass-card contact-info-item">
+          <div class="contact-info-icon" style="color: #e7a41e; background: rgba(231, 164, 30, 0.15);"><i class="fas fa-code"></i></div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">LeetCode</span>
+            <span class="contact-info-value"><a href="https://leetcode.com/u/a_maha/" target="_blank">a_maha</a></span>
+          </div>
+        </div>
+        <div class="glass-card contact-info-item">
+          <div class="contact-info-icon" style="color: #2ecc71; background: rgba(46, 204, 113, 0.15);"><i class="fab fa-hackerrank"></i></div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">HackerRank</span>
+            <span class="contact-info-value"><a href="https://www.hackerrank.com/profile/m31455700" target="_blank">m31455700</a></span>
+          </div>
+        </div>
+        <div class="glass-card contact-info-item">
+          <div class="contact-info-icon" style="color: #3b82f6; background: rgba(59, 130, 246, 0.15);"><i class="fas fa-chart-line"></i></div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">Codeforces</span>
+            <span class="contact-info-value"><a href="https://codeforces.com/profile/mahalakshmi.a2025ece" target="_blank">mahalakshmi</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="logo footer-logo">
+        <i class="fas fa-microchip"></i> Mahalakshmi<span>.</span>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/mahalakshmia2025ece-eng" target="_blank" class="footer-social-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mahalakshmi-a-004a27380" target="_blank" class="footer-social-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p class="footer-copy">Designed and Developed by A. Mahalakshmi &copy; 2026</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
